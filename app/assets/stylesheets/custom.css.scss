@@ -1,2 +1,95 @@
+$navbar-default-bg: #6ec446;
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+#logo {
+  float: left;
+  font-size: 2em;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+#logo:hover {
+  color: #fff;
+}
+
+#art_link {
+  float: left;
+  font-size: 1.3em;
+  color: #000000;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+#art_link:hover {
+  color: #fff;
+}
+
+#drop_s {
+  float: left;
+  font-size: 1.3em;
+  color: #000000;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+#drop_s:hover {
+  color: #fff;
+}
+
+
+.dropdown-toggle {
+  color: #fff;
+}
+
+.center {
+  text-align: center;
+}
+
+.jumbotron {
+  height: 100vh;
+  background-image: asset-url('grass_background.jpg');
+  background-size: cover;
+
+}
+
+
+.jumbotron h1{
+  text-align:center;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 30px;
+  letter-spacing: -1px;
+  font-weight: bold;
+  font-style: oblique;
+}
+
+.btn-xlarge {
+  font-size: 1.7em;
+  font-style: oblique;
+  background-color:black;
+}
+
+.btn-danger:hover{
+  color: black;
+  background-color: #0b7a0b;
+}
+
+.footer {
+  margin-top:45xp;
+  padding-top:5px;
+  border-top:1px solid #6ec446;
+  color: black;
+}
+
+.footer small {
+  float: left;
+}
+
+.footer ul {
+  float: right;
+  list-style: none;
+}
