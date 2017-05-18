@@ -12,6 +12,18 @@ $navbar-default-bg: #6ec446;
   font-weight: bold;
 }
 
+.dropdown-toggle {
+  float: left;
+  color: black !important;
+  font-size: 1.3em;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+.dropdown-toggle:hover {
+    color: white !important;
+}
+
 #logo:hover {
   color: #fff;
 }
@@ -28,23 +40,6 @@ $navbar-default-bg: #6ec446;
   color: #fff;
 }
 
-#drop_s {
-  float: left;
-  font-size: 1.3em;
-  color: #000000;
-  letter-spacing: -1px;
-  font-weight: bold;
-}
-
-#drop_s:hover {
-  color: #fff;
-}
-
-
-.dropdown-toggle {
-  color: #fff;
-}
-
 .center {
   text-align: center;
 }
@@ -53,9 +48,7 @@ $navbar-default-bg: #6ec446;
   height: 100vh;
   background-image: asset-url('grass_background.jpg');
   background-size: cover;
-
 }
-
 
 .jumbotron h1{
   text-align:center;
@@ -79,6 +72,9 @@ $navbar-default-bg: #6ec446;
 }
 
 .footer {
+  background-color: #6ec446;
+  margin-left:10px;
+  margin-right:10px;
   margin-top:45xp;
   padding-top:5px;
   border-top:1px solid #6ec446;
@@ -86,10 +82,19 @@ $navbar-default-bg: #6ec446;
 }
 
 .footer small {
+  
+  background-color: #6ec446;
   float: left;
 }
 
 .footer ul {
+  background-color: #6ec446;
   float: right;
   list-style: none;
 }
+
+.footer li {
+  background-color: #6ec446;
+  float: left;
+}
+

@@ -7,21 +7,38 @@
 </ul>
 <% end %>
 
-<%= form_for @article do |form|%>
-  <p>
-    <%= form.label :title %> </br>
-    <%= form.text_field :title %>
-  </p>
-  
-  <p>
-    <%= form.label :desription %></br>
-    <%= form.text_area :desription %>
-  </p>
-  
-  <p>
-    <%= form.submit %>
-  </p>
-  
-<% end %>
-
- <%= link_to "Back to articles listing", articles_path %>
+<div class= "row">
+  <div class= "col-xs-12">
+    <%= form_for(@article, :html => {class: "form-horizontal", role: "form"}) do |form| %>
+    <div class="form-group">
+      <div class="control-label col-sm-2">
+        <%= form.label :title %>
+      </div>
+      <div class="col-sm-3">
+        <%= form.text_field :title, class: "form-control", placeholder: "Title of Article", autofocus: true %>
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <div class="control-label col-sm-2">
+        <%= form.label :desription %>
+      </div>
+      <div class="col-sm-8">
+        <%= form.text_area :desription, rows: 7, class: "form-control", placeholder: "Article Body" %>
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <%= form.submit class: 'btn btn-danger btn-lg btn-xlarge' %>
+      </div>    
+    </div>
+      
+    <% end %>
+    <div class="col-xs-4 col-xs-offset-4">
+      [ <%= link_to "Cancel request and return to articles listing", articles_path %> ]
+    </div>
+    
+    
+   </div>
+ </div>
