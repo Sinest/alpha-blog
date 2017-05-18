@@ -71,6 +71,20 @@ $navbar-default-bg: #6ec446;
   background-color: #0b7a0b;
 }
 
+.btn:hover{
+  color: black;
+  background-color: #0b7a0b;
+}
+
+.article_actions{
+  border-top: 1px solid #eaeaea;
+  padding-top: 1px;
+}
+
+.description{
+  margin-top: 0;
+}
+
 .footer {
   background-color: #6ec446;
   margin-left:10px;
@@ -97,4 +111,5 @@ $navbar-default-bg: #6ec446;
   background-color: #6ec446;
   float: left;
 }
+
 
